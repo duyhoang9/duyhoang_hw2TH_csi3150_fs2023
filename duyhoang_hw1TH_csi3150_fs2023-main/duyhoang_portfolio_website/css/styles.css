@@ -1,0 +1,93 @@
+/* Basic Styling using CSS*/
+
+body {
+  font-family: Arial, sans-serif; /* Readable, basic font */
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  width: 100%; /* Sets the width of your centered content */
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: #bbb; /* :hover pseudo-class for navbar links */
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #bbb;
+  text-decoration: underline;
+}
+
+/* Responsiveness with Media Queries */
+
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+
+.image-overlay {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; /* center the container */
+}
+
+.image-overlay img {
+  width: 100%;
+  display: block; /* remove the space below the image */
+}
+
+.image-overlay blockquote {
+  position: absolute;
+  top: 50%; /* center it vertically */
+  left: 50%; /* center it horizontally */
+  transform: translate(-50%, -50%); /* perfect centering trick */
+  font-weight: bold; /* make the text bolder */
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* gives a shadow to make the text more readable */
+  text-align: center;
+  font-size: 1.5em;
+  width: 80%;
+  z-index: 1; /* ensure the blockquote is above the image */
+}
